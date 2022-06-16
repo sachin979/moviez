@@ -4,7 +4,7 @@
   font-size: 2.5rem;
   font-weight: 600;
 
-  @include flex(cemter, unset);
+  @include flex(center, unset);
 
   img {
     margin-right: 10px;
@@ -33,7 +33,7 @@
   &__wrap {
     @include flex(center, space-between);
     height: 100%;
-    padding: 0 2 rem;
+    padding: 0 2rem;
 
     @include mobile {
       justify-content: center;
@@ -76,7 +76,7 @@
       height: 5rem;
       width: 100%;
       background-color: $body-bg;
-      padding: 2 rem;
+      padding: 0 2rem;
       box-shadow: $box-shadow;
 
       @include flex(center, space-between);

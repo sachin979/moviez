@@ -23,11 +23,11 @@ const tmdbApi = {
     return axiosClient.get(url, params);
   },
   getTvList: (type, params) => {
-    const url = "tv/" + movieType[type];
+    const url = "tv/" + tvType[type];
     return axiosClient.get(url, params);
   },
-  getVideos: (cate, type) => {
-    const url = category[cate] + "/" + movieType[type];
+  getVideos: (cate, id) => {
+    const url = category[cate] + "/" + id + "/videos";
     return axiosClient.get(url, { params: {} });
   },
   search: (cate, params) => {
